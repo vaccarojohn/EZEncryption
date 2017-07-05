@@ -4,6 +4,7 @@ This package provides an easy way to encrypt strings into MD5, SHA1, SHA256, SHA
 
 Example 1 (Using The Default Encryption Methods):
 
+```c#
 using System;
 using EZEncryption;
 
@@ -25,12 +26,13 @@ namespace test
             Console.WriteLine(myHash.OutputAsString);
         }
     }
-}
+}```
 
 
 
 Example 2 (Creating Your Own Custom Cipher Function):
 
+```c#
 using System;
 using EZEncryption;
 
@@ -63,4 +65,4 @@ namespace test
             }
         }
     }
-}
+}```
