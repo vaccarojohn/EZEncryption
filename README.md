@@ -43,22 +43,29 @@ namespace test
     {
         static void Main(string[] args)
         {
-            Hash myHash = Hash.CreateCustomHash("yourInput", new MyCustomCipher());
-            Console.WriteLine(myHash.OutputAsString);
+            while(true)
+            {
+                Console.WriteLine("Enter A String To Be Encoded To My Custom Cipher: ");
+                Hash myHash = Hash.CreateCustomHash(Console.ReadLine(), new MyCustomCipher());
+                Console.WriteLine(myHash.OutputAsString);
+            }
         }
     }
     class MyCustomCipher : ICustomCipher
     {
         public char ConvertChar(char input)
         {
-            // Only Works With Letters
+            int result;
             if (input == 'z')
             {
-                return 'a';
-            }
-            else if (input == 'Z')
+                return '0';
+            } else if (input == '9')
             {
-                return 'A';
+                return 'a';
+            } else if (int.TryParse(input.ToString(), out result))
+            {
+                result += 1;
+                return char.Parse(result.ToString());
             }
             else
             {
