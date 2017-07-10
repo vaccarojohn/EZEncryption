@@ -43,6 +43,7 @@ namespace test
     {
         static void Main(string[] args)
         {
+            Hash.UseUpperCasing = false;
             while(true)
             {
                 Console.WriteLine("Enter A String To Be Encoded To My Custom Cipher: ");
