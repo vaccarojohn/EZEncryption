@@ -29,6 +29,28 @@ namespace test
 }
 ```
 
+Example 2 (Another Way To Use The Default Encryption Methods):
+```c#
+namespace test
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Hash myHash = new MD5Hash("yourInput");
+            Console.WriteLine(myHash.OutputAsString);
+            myHash = new SHA1Hash("yourInput");
+            Console.WriteLine(myHash.OutputAsString);
+            myHash = new SHA256Hash("yourInput");
+            Console.WriteLine(myHash.OutputAsString);
+            myHash = new SHA384Hash("yourInput");
+            Console.WriteLine(myHash.OutputAsString);
+            myHash = new SHA512Hash("yourInput");
+            Console.WriteLine(myHash.OutputAsString);
+        }
+    }
+}```
+
 
 
 Example 2 (Creating Your Own Custom Cipher Function):
@@ -76,3 +98,6 @@ namespace test
     }
 }
 ```
+
+Update:
+- Code More Efficient
