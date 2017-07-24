@@ -31,6 +31,9 @@ namespace test
 
 Example 2 (Another Way To Use The Default Encryption Methods):
 ```c#
+using System;
+using EZEncryption;
+
 namespace test
 {
     class Program
