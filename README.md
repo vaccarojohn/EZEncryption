@@ -1,6 +1,8 @@
 # C-Sharp-EZEncryption
 This package provides an easy way to encrypt strings into MD5, SHA1, SHA256, SHA384, and SHA512 formats. It also provides a way to create your own custom cipher and use it to encrypt strings.
 
+REMEMBER: The Default Setting For Hash.UseUpperCasing is true. Change that to false, and all hashes generated with C-Sharp-EZEncryption will have no capital letters.
+
 
 Example 1 (Using The Default Encryption Methods):
 
@@ -69,7 +71,6 @@ namespace test
     {
         static void Main(string[] args)
         {
-            Hash.UseUpperCasing = false;
             while(true)
             {
                 Console.WriteLine("Enter A String To Be Encoded To My Custom Cipher: ");
