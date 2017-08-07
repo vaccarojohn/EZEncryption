@@ -1,13 +1,13 @@
 # EZEncryption
 This package provides an easy way to encrypt strings into MD5, SHA1, SHA256, SHA384, and SHA512 formats. It also provides a way to create your own custom cipher and use it to encrypt strings. This package is compiled for .NET 4.7, 4.6.1, 4.5.2, 4.5.1, 4.5, 4.4, and 3.5. The version for 3.5 works with Unity.
 
-REMEMBER: The Default Setting For Hash.UseUpperCasing is true. Change that to false, and all hashes generated with C-Sharp-EZEncryption will have no capital letters.
+REMEMBER: The Default Setting For Hash.UseUpperCasing is true. Change that to false, and all MD5, SHA1, SHA256, SHA385, SHA512, and Custom Ciphers generated with EZEncryption will have no capital letters.
 
-## Updates
+### Updates
 - EZEncryption Now Supports Symmetric Hashes! (Built In Support For AES, DES, TripleDES, and RC2 Symmetric Hashes) Scroll Down To Example 4 To See How To Use Them! 
 
 
-## Example 1 (Using The Default Encryption Methods):
+### Example 1 (Using The Default Encryption Methods):
 
 ```c#
 using System;
@@ -34,7 +34,7 @@ namespace test
 }
 ```
 
-## Example 2 (Another Way To Use The Default Encryption Methods):
+### Example 2 (Another Way To Use The Default Encryption Methods):
 ```c#
 using System;
 using EZEncryption;
@@ -61,7 +61,7 @@ namespace test
 ```
 
 
-## Example 3 (Creating Your Own Custom Cipher Function):
+### Example 3 (Creating Your Own Custom Cipher Function):
 
 ```c#
 using System;
@@ -106,7 +106,7 @@ namespace test
 }
 ```
 
-## Example 4 (Using Built In Symmetric Hashes):
+### Example 4 (Using Built In Symmetric Hashes):
 ```c#
 using System;
 using EZEncryption;
