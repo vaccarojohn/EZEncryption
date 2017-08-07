@@ -4,7 +4,7 @@ This package provides an easy way to encrypt strings into MD5, SHA1, SHA256, SHA
 REMEMBER: The Default Setting For Hash.UseUpperCasing is true. Change that to false, and all hashes generated with C-Sharp-EZEncryption will have no capital letters.
 
 
-Example 1 (Using The Default Encryption Methods):
+##Example 1 (Using The Default Encryption Methods):
 
 ```c#
 using System;
@@ -31,7 +31,7 @@ namespace test
 }
 ```
 
-Example 2 (Another Way To Use The Default Encryption Methods):
+##Example 2 (Another Way To Use The Default Encryption Methods):
 ```c#
 using System;
 using EZEncryption;
@@ -59,7 +59,7 @@ namespace test
 
 
 
-Example 2 (Creating Your Own Custom Cipher Function):
+##Example 2 (Creating Your Own Custom Cipher Function):
 
 ```c#
 using System;
@@ -103,6 +103,3 @@ namespace test
     }
 }
 ```
-
-Update:
-- Code More Efficient
