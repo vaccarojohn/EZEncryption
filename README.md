@@ -3,8 +3,11 @@ This package provides an easy way to encrypt strings into MD5, SHA1, SHA256, SHA
 
 REMEMBER: The Default Setting For Hash.UseUpperCasing is true. Change that to false, and all hashes generated with C-Sharp-EZEncryption will have no capital letters.
 
+## Updates
+- EZEncryption Now Supports Symmetric Hashes! (Built In Support For AES, DES, TripleDES, and RC2 Symmetric Hashes) Scroll Down To Example 4 To See How To Use Them! 
 
-##Example 1 (Using The Default Encryption Methods):
+
+## Example 1 (Using The Default Encryption Methods):
 
 ```c#
 using System;
@@ -31,7 +34,7 @@ namespace test
 }
 ```
 
-##Example 2 (Another Way To Use The Default Encryption Methods):
+## Example 2 (Another Way To Use The Default Encryption Methods):
 ```c#
 using System;
 using EZEncryption;
@@ -58,8 +61,7 @@ namespace test
 ```
 
 
-
-##Example 2 (Creating Your Own Custom Cipher Function):
+## Example 3 (Creating Your Own Custom Cipher Function):
 
 ```c#
 using System;
@@ -103,3 +105,30 @@ namespace test
     }
 }
 ```
+
+## Example 4 (Using Built In Symmetric Hashes):
+```c#
+using System;
+using EZEncryption;
+
+namespace test
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter A Password For This Encryption: ");
+            string password = Console.ReadLine();
+            Console.WriteLine("Enter Some Text To Encrypt: ");
+            string text = Console.ReadLine();
+            Console.WriteLine("Encrypting...\n");
+            AESHash aes = new AESHash(text, password);
+            Console.WriteLine("Encrypted Data: " + aes.OutputAsString);
+            Console.WriteLine("Decrypting...\n");
+            Console.WriteLine("Decrypted Data: " + AESHash.Decrypt(aes.OutputAsByteArray, password));
+        }
+    }
+}
+```
+
+##### Note: You May Also Use The SymmetricHash.CreateSymmetricHash() Method To Create Symmetric Hashes.
