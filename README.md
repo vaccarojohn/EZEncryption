@@ -5,7 +5,7 @@ This package provides an easy way to encrypt strings into MD5, SHA1, SHA256, SHA
 The Default Setting For Hash.UseUpperCasing is true. Change that to false, and all MD5, SHA1, SHA256, SHA385, SHA512, and Custom Ciphers generated with EZEncryption will have no capital letters.
 
 ### Updates
-- EZEncryption Now Supports Symmetric Hashes! (Built In Support For AES, DES, TripleDES, and RC2 Symmetric Hashes) Scroll Down To [Example 4](https://github.com/gamergames123/EZEncryption#example-4-using-built-in-symmetric-hashes) To See How To Use Them! 
+- 8/7/2017 - EZEncryption Now Supports Symmetric Hashes! (Built In Support For AES, DES, TripleDES, and RC2 Symmetric Hashes) Scroll Down To [Example 4](https://github.com/gamergames123/EZEncryption#example-4-using-built-in-symmetric-hashes) To See How To Use Them! 
 
 
 ### Example 1 (Using The Default Encryption Methods):
