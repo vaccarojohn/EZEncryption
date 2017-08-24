@@ -1,7 +1,7 @@
 # EZEncryption
 This package provides an easy way to encrypt strings into MD5, SHA1, SHA256, SHA384, and SHA512 formats. It also provides a way to create your own custom cipher and use it to encrypt strings. This package is compiled for .NET 4.7, 4.6.1, 4.5.2, 4.5.1, 4.5, 4.4, and 3.5. The version for 3.5 works with Unity.
 
-###### Note:
+##### Note:
 For security reasons, an open-source version of EZEncryption is not provided.
 
 ##### REMEMBER: 
